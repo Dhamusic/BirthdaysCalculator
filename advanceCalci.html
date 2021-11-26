@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html style="background-color: black;>
+<head>
+	<title>BirthDaysCalculator</title>
+	<link rel="stylesheet" type="text/css" href="dhamustyle.css">
+	<style>
+		.date{
+    background-color: rgba(19, 16, 16,);
+	}
+	#back{
+		font-size: rem;
+		background-color: rgba(8, 7, 7, .7);
+    	padding-top: 10rem;
+    	padding-bottom: 10rem;
+    	padding-left: 3rem;
+    	padding-right: 3rem;
+    	margin:5rem;
+		border-radius: 3rem;
+		justify-content: center;
+		align-items: center;
+		box-shadow: 0 8px 32px 0 rgba(219, 21, 186, 0.89) ;
+		
+
+	}
+	.text{
+    	color: rgba(19, 3, 16, 0.486);
+		text-shadow: 2px 2px 2px rgba(219, 21, 186, 0.89);
+
+	}
+	</style>
+</head>
+<body style="text-align:center;font-size:65px;padding-top: 5rem">
+	<div id="back">
+	<label class="text" style="size:30rem">Birthdate</label>
+	<br><br>
+	<label class="text">Date</label>
+	<select id="bDate" name="Date" style="font-size: 2rem;background-color: rgba(0, 0, 0, 0.89);color: rgba(219, 21, 186, 0.89);text-shadow:2px 2px 2px rgba(255, 255, 255, 0.37); box-shadow:0px 8px 40px 0px rgba(219, 21, 186, 0.89);" >
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+		<option>4</option>
+		<option>5</option>
+		<option>6</option>
+		<option>7</option>
+		<option>8</option>
+		<option>9</option>
+		<option>10</option>
+		<option>11</option>
+		<option>12</option> 
+		<option>13</option>
+		<option>14</option>
+		<option>15</option>
+		<option>16</option>
+		<option>17</option>
+		<option>18</option>
+		<option>19</option>
+		<option>20</option>
+		<option>21</option>
+		<option>22</option>
+		<option>23</option>
+		<option>24</option>
+		<option>25</option>
+		<option>26</option>
+		<option>27</option>
+		<option>28</option>
+		<option>29</option>
+		<option>30</option>
+		<option>31</option></select><br>
+	<label class="text">Month</label>
+	<select id="bMonth" name="Month" style="font-size: 2rem;background-color: rgba(0, 0, 0, 0.89);color: rgba(219, 21, 186, 0.89);text-shadow:2px 2px 2px rgba(255, 255, 255, 0.37); box-shadow:0px 8px 40px 0px rgba(219, 21, 186, 0.89)">
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+		<option>4</option>
+		<option>5</option>
+		<option>6</option>
+		<option>7</option>
+		<option>8</option>
+		<option>9</option>
+		<option>10</option>
+		<option>11</option>
+		<option>12</option> </select><br>
+	<label class="text">Year</label>
+	<select id="bYear" name="Year" style="font-size: 2rem;;background-color: rgba(0, 0, 0, 0.89);color: rgba(219, 21, 186, 0.89);text-shadow:2px 2px 2px rgba(255, 255, 255, 0.37); box-shadow:0px 8px 40px 0px rgba(219, 21, 186, 0.89)">
+		<option>1990</option>
+		<option>1991</option>
+		<option>1992</option>
+		<option>1993</option>
+		<option>1994</option>
+		<option>1995</option>
+		<option>1996</option>
+		<option>1997</option>
+		<option>1998</option>
+		<option>1999</option>
+		<option>2000</option>
+		<option>2001</option>
+		<option>2002</option>
+		<option>2003</option>
+		<option>2004</option>
+		<option>2005</option>
+		<option>2006</option>
+		<option>2007</option>
+		<option>2008</option>
+		<option>2009</option>
+		<option>2010</option>
+		<option>2011</option>
+		<option>2012</option>
+		<option>2013</option>
+		<option>2014</option>
+		<option>2015</option>
+		<option>2016</option>
+		<option>2017</option>
+		<option>2018</option>
+		<option>2019</option>
+		<option>2020</option>
+		<option>2021</option>
+		<option>2022</option>
+		<option>2023</option> </select>
+	<br>
+	<br>
+	<br>
+	<label class="text">Current Date</label>
+	<br><br>
+	<label class="text">Date</label>
+	<select id="cDate" name="current date" style="font-size: 2rem;background-color: rgba(0, 0, 0, 0.89);color: rgba(219, 21, 186, 0.89);text-shadow:2px 2px 2px rgba(255, 255, 255, 0.37); box-shadow:0px 8px 40px 0px rgba(219, 21, 186, 0.89)">
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+		<option>4</option>
+		<option>5</option>
+		<option>6</option>
+		<option>7</option>
+		<option>8</option>
+		<option>9</option>
+		<option>10</option>
+		<option>11</option>
+		<option>12</option> 
+		<option>13</option>
+		<option>14</option>
+		<option>15</option>
+		<option>16</option>
+		<option>17</option>
+		<option>18</option>
+		<option>19</option>
+		<option>20</option>
+		<option>21</option>
+		<option>22</option>
+		<option>23</option>
+		<option>24</option>
+		<option>25</option>
+		<option>26</option>
+		<option>27</option>
+		<option>28</option>
+		<option>29</option>
+		<option>30</option>
+		<option>31</option></select><br>
+	<label class="text">Month</label>
+	<select id="cMonth" name="current Month" style="font-size: 2rem;background-color: rgba(0, 0, 0, 0.89);color: rgba(219, 21, 186, 0.89);text-shadow:2px 2px 2px rgba(255, 255, 255, 0.37); box-shadow:0px 8px 40px 0px rgba(219, 21, 186, 0.89)">
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+		<option>4</option>
+		<option>5</option>
+		<option>6</option>
+		<option>7</option>
+		<option>8</option>
+		<option>9</option>
+		<option>10</option>
+		<option>11</option>
+		<option>12</option> </select><br>
+	<label class="text">Year</label>
+	<select id="cYear" name="current Year" style="font-size: 2rem;background-color: rgba(0, 0, 0, 0.89);color: rgba(219, 21, 186, 0.89);text-shadow:2px 2px 2px rgba(255, 255, 255, 0.37); box-shadow:0px 8px 40px 0px rgba(219, 21, 186, 0.89)">
+		<option>1990</option>
+		<option>1991</option>
+		<option>1992</option>
+		<option>1993</option>
+		<option>1994</option>
+		<option>1995</option>
+		<option>1996</option>
+		<option>1997</option>
+		<option>1998</option>
+		<option>1999</option>
+		<option>2000</option>
+		<option>2001</option>
+		<option>2002</option>
+		<option>2003</option>
+		<option>2004</option>
+		<option>2005</option>
+		<option>2006</option>
+		<option>2007</option>
+		<option>2008</option>
+		<option>2009</option>
+		<option>2010</option>
+		<option>2011</option>
+		<option>2012</option>
+		<option>2013</option>
+		<option>2014</option>
+		<option>2015</option>
+		<option>2016</option>
+		<option>2017</option>
+		<option>2018</option>
+		<option>2019</option>
+		<option>2020</option>
+		<option>2021</option>
+		<option>2022</option>
+		<option>2023</option> </select>
+	<br>
+	<button onClick="calci()" style="width:50%;height:4rem;font-size: 2rem;background-color: rgba(0, 0, 0, 0.89);color: rgba(219, 21, 186, 0.89);text-shadow:2px 2px 2px rgba(255, 255, 255, 0.37); box-shadow:0px 8px 40px 0px rgba(219, 21, 186, 0.89)">click to calculate</button>
+	<br>
+	<br>
+	<input id="answer" style="width:24%;height:4rem;font-size: 40px;background-color: rgba(240, 64, 181, 0.233);color: rgba(8, 3, 8, 0.89); box-shadow:0px 8px 40px 0px rgba(219, 21, 186, 0.89)">
+		
+
+	<script>
+	        function calci()
+		{
+			var bd=document.getElementById("bDate").value;
+			var bm=document.getElementById("bMonth").value;
+			var by=document.getElementById("bYear").value;
+			var cd=document.getElementById("cDate").value;
+			var cm=document.getElementById("cMonth").value;
+			var cy=document.getElementById("cYear").value;
+			var sum1;
+			var sum2=0;
+			var sum3;
+			var sum4=0
+			if(by==cy)
+			{
+				if(by%4==0)
+				{
+					var arr=[0,31,29,31,30,31,30,31,31,30,31,30,31];
+					for(var j=bm; j<=cm ;j++)
+					{
+						sum4=sum4+arr[j];
+					}sum4=sum4-bd-(arr[cm]-cd);
+				}
+				else
+				{
+					var arr=[0,31,28,31,30,31,30,31,31,30,31,30,31];
+					for(var j=bm; j<=cm ;j++)
+					{
+						sum4=sum4+arr[j];
+					}sum4=sum4-bd-(arr[cm]-cd);
+				}document.getElementById("answer").value=parseFloat(sum4);
+				
+			}
+			else
+			{
+			
+			if(by%4==0)
+			{
+				switch(bm)
+				{
+					case '1' : sum1=366-bd;
+						   break;
+					case '2' : sum1=366-31-bd;
+					       	   break;
+					case '3' : sum1=366-60-bd;
+						   break;
+					case '4' : sum1=366-91-bd;
+					       	   break;
+					case '5' : sum1=366-121-bd;
+					       	   break;
+					case '6' : sum1=366-152-bd;
+						   break;
+					case '7' : sum1=366-182-bd;
+					       	   break;
+					case '8' : sum1=366-213-bd;
+						   break;
+					case '9' : sum1=366-244-bd;
+					       	   break;
+					case '10' : sum1=366-274-bd;
+					       	   break;
+					case '11' : sum1=366-305-bd;
+						   break;
+					case '12' : sum1=366-335-bd;
+					       	   break;
+				} 
+			}
+			else
+			{
+				switch(bm)
+				{
+					case '1' : sum1=365-bd;
+						   break;
+					case '2' : sum1=365-31-bd;
+					       	   break;
+					case '3' : sum1=366-60-bd;
+						   break;
+					case '4' : sum1=366-91-bd;
+					       	   break;
+					case '5' : sum1=366-121-bd;
+					       	   break;
+					case '6' : sum1=366-152-bd;
+						   break;
+					case '7' : sum1=366-182-bd;
+					       	   break;
+					case '8' : sum1=366-213-bd;
+						   break;
+					case '9' : sum1=366-244-bd;
+					       	   break;
+					case '10' : sum1=366-274-bd;
+					       	   break;
+					case '11' : sum1=366-305-bd;
+						   break;
+					case '12' : sum1=366-335-bd;
+					       	   break;
+				} 
+			}
+			for(var i=parseFloat(by)+1; i<cy; i++)
+			{
+				if(i%4==0)
+				{
+					sum2=sum2+366;
+				}
+				else
+				{
+					sum2=sum2+365;
+				}
+			}
+			if(cy%4==0)
+			{
+				switch(cm)
+				{
+					case '1' : sum3=cd;
+						   break;
+					case '2' : sum3=31+parseFloat(cd);
+					       	   break;
+					case '3' : sum3=60+parseFloat(cd);
+						   break;
+					case '4' : sum3=91+parseFloat(cd);
+					       	   break;
+					case '5' : sum3=121+parseFloat(cd);
+					       	   break;
+					case '6' : sum3=152+parseFloat(cd);
+						   break;
+					case '7' : sum3=182+parseFloat(cd);
+					       	   break;
+					case '8' : sum3=213+parseFloat(cd);
+						   break;
+					case '9' : sum3=244+parseFloat(cd);
+					       	   break;
+					case '10' : sum3=274+parseFloat(cd);
+					       	   break;
+					case '11' : sum3=305+parseFloat(cd);
+						   break;
+					case '12' : sum3=335+parseFloat(cd);
+					       	   break;
+				} 
+			}
+			else
+			{
+				switch(cm)
+				{
+					case '1' : sum3=cd;
+						   break;
+					case '2' : sum3=31+parseFloat(cd);
+					       	   break;
+					case '3' : sum3=60+parseFloat(cd)-1;
+						   break;
+					case '4' : sum3=91+parseFloat(cd)-1;
+					       	   break;
+					case '5' : sum3=121+parseFloat(cd)-1;
+					       	   break;
+					case '6' : sum3=152+parseFloat(cd)-1;
+						   break;
+					case '7' : sum3=182+parseFloat(cd)-1;
+					       	   break;
+					case '8' : sum3=213+parseFloat(cd)-1;
+						   break;
+					case '9' : sum3=244+parseFloat(cd)-1;
+					       	   break;
+					case '10' : sum3=274+parseFloat(cd)-1;
+					       	   break;
+					case '11' : sum3=305+parseFloat(cd)-1;
+						   break;
+					case '12' : sum3=335+parseFloat(cd)-1;
+					       	   break;
+				} 
+			}
+			
+			document.getElementById("answer").value=parseFloat(sum1)+parseFloat(sum2)+parseFloat(sum3)+"days";
+			}
+		}
+		
+	</script>
+	</div>
+	
+</body>
+</html>
